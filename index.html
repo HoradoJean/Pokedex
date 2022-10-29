@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="//db.onlinewebfonts.com/c/51ba22ae06790efd464bde752a2cd9d1?family=Flexo" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="psyduck_icon-icons.com_67509.ico" type="image/x-icon">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img id="logo" src="https://www.freepnglogos.com/uploads/pokemon-logo-text-png-7.png" alt="">
+    
+    <form>
+        <input id="search-input" type="text" placeholder="Search Pokemon" onkeyup="searchPokemon()" autocomplete="off">
+        <select onchange="getGenerations()" id="gens">
+            <option value="1">Gen 1</option>
+            <option value="2">Gen 2</option>
+            <option value="3">Gen 3</option>
+            <option value="4">Gen 4</option>
+            <option value="5">Gen 5</option>
+            <option value="6">Gen 6</option>
+            <option value="7">Gen 7</option>
+            <option value="8">Gen 8</option>
+        </select>
+    </form>
+
+    <div id="container">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
